@@ -49,12 +49,6 @@ Users should be able to:
 ### What I learned
 
 ```js
-fetch("https://api.adviceslip.com/advice")
-  .then((response) => response.json())
-  .then((data) => console.log(data));
-```
-
-```js
 if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
   copyed.classList.add("copyed");
   copyed.textContent = "Copied!";
