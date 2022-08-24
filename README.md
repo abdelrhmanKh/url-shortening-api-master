@@ -52,6 +52,8 @@ Users should be able to:
 
 ### What I learned
 
+- This is the Regex I wrote to simple check the url Before send it to server
+
 ```Regex
 const re = /(https?:\/\/)?(www)?(.\w+)+((:\d{4})?((\/|\?|\/\?|&|=|-)(\w+.?=?\w+)*))*/ig;
 ```
