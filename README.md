@@ -1,6 +1,6 @@
-# Frontend Mentor - Advice generator app solution
+# Frontend Mentor - Shortly URL shortening API Challenge solution
 
-This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -13,11 +13,9 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
-It Was A fun App to Develop and design it and Easy one also
+It Was A fun App to Develop and design it.
 
 ### The challenge
 
@@ -25,7 +23,13 @@ Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Generate a new piece of advice by clicking the dice icon
+- View the optimal layout for the site depending on their device's screen size
+- Shorten any valid URL
+- See a list of their shortened links, even after refreshing the browser
+- Copy the shortened link to their clipboard in a single click
+- Receive an error message when the `form` is submitted if:
+  - The `input` field is empty
+  - Write invalid Url in `input`
 
 ### Screenshot
 
@@ -33,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/advicegeneratorappmain-BOEmv4Mtyg](https://www.frontendmentor.io/solutions/advicegeneratorappmain-BOEmv4Mtyg)
-- Live Site URL: [https://abdelrhmankh.github.io/advice-generator-app-main/](https://abdelrhmankh.github.io/advice-generator-app-main/)
+- Solution URL: [https://www.frontendmentor.io/solutions/urlshorteningapimaster-e-YHIIWyDL](https://www.frontendmentor.io/solutions/urlshorteningapimaster-e-YHIIWyDL)
+- Live Site URL: [https://abdelrhmankh.github.io/url-shortening-api-master/](https://abdelrhmankh.github.io/url-shortening-api-master/)
 
 ## My process
 
@@ -47,6 +51,10 @@ Users should be able to:
 - JS pure
 
 ### What I learned
+
+```Regex
+const re = /(https?:\/\/)?(www)?(.\w+)+((:\d{4})?((\/|\?|\/\?|&|=|-)(\w+.?=?\w+)*))*/ig;
+```
 
 ```js
 if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
